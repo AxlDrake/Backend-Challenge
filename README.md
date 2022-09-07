@@ -19,6 +19,7 @@ For PHP > 8 I need to make 2 little changes:
 # END POINTS
 
 <details><summary>POST: /user/login</summary>
+	
 * **URL**
 
   _/user/login_
