@@ -1,5 +1,5 @@
 **Backend Challenge**
-----
+
  	PHP version: 8.1.1
 	
 	Configure the /application/config/database.php for your mysql credentials
