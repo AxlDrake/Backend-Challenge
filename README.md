@@ -1,12 +1,12 @@
 **Backend Challenge**
 
-PHP version: 8.1.1
-
-*Configure the /application/config/database.php for your mysql credentials
+-PHP version: 8.1.1
+-Configure the /application/config/database.php for your mysql credentials
 
 For PHP > 8 I need to make 2 little changes:
+
 1. \system\core\Output.php:
-	```
+	```php
 	457. //$output = str_replace(array('{elapsed_time}', '{memory_usage}'), array($elapsed, $memory), $output); PHP < 8.0
 	458. $output = $output ? str_replace(array('{elapsed_time}', '{memory_usage}'), array($elapsed, $memory), $output): ""; //PHP 8.1
 	```
@@ -16,12 +16,11 @@ For PHP > 8 I need to make 2 little changes:
 	1060. //: (trim($str) !== ''); PHP < 8
 	```
 
-
-**END POINTS **
+# END POINTS
 
 * **URL**
 
-  <_/user/login_>
+  _/user/login_
 
 * **Method:**  
 
@@ -31,19 +30,20 @@ For PHP > 8 I need to make 2 little changes:
 
    **Required:**
  
-   `password=[string]`
-	 `email=[valid_email|exists]`   
+   -`password=[string]`
+   -`email=[valid_email|exists]`   
 
 * **Data Params**
 	
 	![image](https://user-images.githubusercontent.com/15652231/188943211-47c47c20-2213-4a2f-abf2-39e9e41457e8.png)	
 
-* **Success Response:**
-  
-  <_What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!_>
+* **Success Response:**  
 
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12 }`
+  * **Code:** 201 <br />
+    **Content:** `{
+    			"uid": 103,
+    			"message": "user created correctly."
+		}`
  
 * **Error Response:**
 
