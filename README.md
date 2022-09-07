@@ -17,6 +17,8 @@ For PHP > 8 I need to make 2 little changes:
 	1059. : (trim((string) $str) !== ''); //PHP > 8
 	1060. //: (trim($str) !== ''); PHP < 8
 	```
+	
+- Grocery crud url are in /tables/users and /tables/user_activity
 
 # END POINTS
 
