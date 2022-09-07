@@ -61,7 +61,3 @@ $route['user/register']['post'] = 'users/register';
 //ENDPOINT CONVERSATIONS
 $route['user/activity/conversations']['post'] = 'user_activity/get_conversations';
 
-
-//Grocery crud url
-$route['tables/users'] = 'tables/users';
-$route['tables/user/activity'] = 'tables/user_activity';
