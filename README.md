@@ -6,7 +6,7 @@ PHP version: 8.1.1
 	
 	For PHP > 8 I need to make 2 little changes:
 	1. \system\core\Output.php:
-		```php
+		```
 		457. //$output = str_replace(array('{elapsed_time}', '{memory_usage}'), array($elapsed, $memory), $output); PHP < 8.0
 		458. $output = $output ? str_replace(array('{elapsed_time}', '{memory_usage}'), array($elapsed, $memory), $output): ""; //PHP 8.1
 		```
