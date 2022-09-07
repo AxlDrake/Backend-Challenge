@@ -42,25 +42,25 @@ For PHP > 8 I need to make 2 little changes:
   * **Code:** 201 <br />
     **Content:** `{
     			"uid": 103,
-    			"message": "user created correctly."
+    			"message": "Successfully logged in."
 		}`
  
 * **Error Response:**
 
-  <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
-
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Log in" }`
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{
+    "errors": {
+        "email": "The Email field must contain a unique value."
+    }
+}`
 
   OR
 
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
+  * **Code:** 401 Unauthorized <br />
+    **Content:** `{
+    "errors": {
+        "password": "The password for the user is invalid."
+    }
+}`
 
-* **Sample Call:**
 
-  <_Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable._> 
-
-* **Notes:**
-
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
