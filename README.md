@@ -11,7 +11,10 @@ For PHP > 8 I need to make 2 little changes:
 	458. $output = $output ? str_replace(array('{elapsed_time}', '{memory_usage}'), array($elapsed, $memory), $output): ""; //PHP 8.1
 	```
 2. \system\libraries\Form_validation.php	
-![image](https://user-images.githubusercontent.com/15652231/188941925-ef29865a-dff1-474e-b4be-1eca222aebe9.png)	
+	```php
+	1059. : (trim((string) $str) !== ''); //PHP > 8
+	1060. //: (trim($str) !== ''); PHP < 8
+	```
 
 
 **END POINTS **
