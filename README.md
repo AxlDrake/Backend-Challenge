@@ -43,7 +43,7 @@ For PHP > 8 I need to make 2 little changes:
 
 * **Success Response:**  
 
-  * **Code:** 201 <br />
+  * **Code:** 200 <br />
     **Content:** `{
     			"uid": 103,
     			"message": "Successfully logged in."
@@ -64,6 +64,47 @@ For PHP > 8 I need to make 2 little changes:
     **Content:** `{
     "errors": {
         "password": "The password for the user is invalid."
+    }
+}`
+
+</details>
+
+<details><summary>POST: /user/register</summary>
+	
+* **URL**
+
+  _/user/register_
+
+* **Method:**  
+
+  | `POST` |
+  
+*  **URL Params**    
+
+   **Required:**
+ 
+   -`password=[string|min_lenght:3]` <br />
+   -`email=[valid_email|is_unique]`   
+
+* **Data Params**
+	
+	![image](https://user-images.githubusercontent.com/15652231/188943211-47c47c20-2213-4a2f-abf2-39e9e41457e8.png)	
+
+* **Success Response:**  
+
+  * **Code:** 201 <br />
+    **Content:** `{
+    "uid": 104,
+    "message": "user created correctly."
+}`
+ 
+* **Error Response:**
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{
+    "errors": {
+        "password": "The Password field is required.",
+        "email": "The Email field is required."
     }
 }`
 
