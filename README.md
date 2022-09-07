@@ -18,6 +18,7 @@ For PHP > 8 I need to make 2 little changes:
 
 # END POINTS
 
+<details><summary>POST: /user/login</summary>
 * **URL**
 
   _/user/login_
@@ -30,7 +31,7 @@ For PHP > 8 I need to make 2 little changes:
 
    **Required:**
  
-   -`password=[string]`
+   -`password=[string]` <br />
    -`email=[valid_email|exists]`   
 
 * **Data Params**
@@ -63,4 +64,5 @@ For PHP > 8 I need to make 2 little changes:
     }
 }`
 
+</details>
 
