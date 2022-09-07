@@ -110,3 +110,51 @@ For PHP > 8 I need to make 2 little changes:
 
 </details>
 
+<details><summary>POST: /user/activity/conversations</summary>
+	
+* **URL**
+
+  _/user/activity/conversations_
+
+* **Method:**  
+
+  | `POST` |
+  
+*  **URL Params**    
+
+   **Required:**
+ 
+   -`uid=[numeric]` <br />   
+
+* **Data Params**
+	
+	![image](https://user-images.githubusercontent.com/15652231/188949142-d51e16ae-b395-4b61-bfad-800b7b55721d.png)
+
+
+* **Success Response:**  
+
+  * **Code:** 200 <br />
+    **Content:** `{
+    "code": 200,
+    "payload": [
+        {
+            "id": 3,
+            "messageFrom": "Qui ut cumque quaerat suscipit consequuntur. Similique quo vero quos iste eos sit eaque aut.",
+            "value": "Libero nihil cum veniam quis. Id praesentium eos earum distinctio labore. Repudiandae sed veritatis et dolores perferendis repudiandae aut.",
+            "timestamp": "1549069241"
+        }
+    ]
+}`
+ 
+* **Error Response:**
+
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{
+    "code": 400,
+    "errors": {
+        "uid": "The uid field is required."
+    }
+}`
+  
+
+</details>
