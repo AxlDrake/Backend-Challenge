@@ -1,32 +1,40 @@
 **Backend Challenge**
 ----
-  <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
+ 	PHP version: 8.1.1
+	
+	Configure the /application/config/database.php for your mysql credentials
+	![image](https://user-images.githubusercontent.com/15652231/188941088-19791c6f-0575-403c-a684-16b736bd7738.png)
+	
+	For PHP > 8 I need to make 2 little changes:
+	
+	1. \system\core\Output.php
+	![image](https://user-images.githubusercontent.com/15652231/188941408-fe4d6739-4525-4efd-83e7-b5cb29642839.png)
+	
+	2. \system\libraries\Form_validation.php	
+	![image](https://user-images.githubusercontent.com/15652231/188941925-ef29865a-dff1-474e-b4be-1eca222aebe9.png)
+	
+----
+
+**END POINTS **
 
 * **URL**
 
-  <_The URL Structure (path only, no root url)_>
+  <_/user/login_>
 
-* **Method:**
+* **Method:**  
+
+  | `POST` |
   
-  <_The request type_>
-
-  `GET` | `POST` | `DELETE` | `PUT`
-  
-*  **URL Params**
-
-   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
+*  **URL Params**    
 
    **Required:**
  
-   `id=[integer]`
-
-   **Optional:**
- 
-   `photo_id=[alphanumeric]`
+   `password=[string]`
+	 `email=[valid_email|exists]`   
 
 * **Data Params**
-
-  <_If making a post request, what should the body payload look like? URL Params rules apply here too._>
+	
+	![image](https://user-images.githubusercontent.com/15652231/188943211-47c47c20-2213-4a2f-abf2-39e9e41457e8.png)	
 
 * **Success Response:**
   
