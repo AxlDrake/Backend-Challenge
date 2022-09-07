@@ -1,8 +1,8 @@
 **Backend Challenge**
 
--PHP version: 8.1.1
--CodeIgniter Version 3.1.10
--Grocery Crud Stable - v1.6.4
+-PHP version: 8.1.1 <br />
+-CodeIgniter Version 3.1.10 <br />
+-Grocery Crud Stable - v1.6.4 <br />
 -Configure the /application/config/database.php for your mysql credentials
 
 For PHP > 8 I need to make 2 little changes:
