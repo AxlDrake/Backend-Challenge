@@ -1,17 +1,17 @@
 **Backend Challenge**
 
- 	PHP version: 8.1.1
-	
-	Configure the /application/config/database.php for your mysql credentials
-	![image](https://user-images.githubusercontent.com/15652231/188941088-19791c6f-0575-403c-a684-16b736bd7738.png)
-	
-	For PHP > 8 I need to make 2 little changes:
-	
-	1. \system\core\Output.php
-	![image](https://user-images.githubusercontent.com/15652231/188943604-7ecbe9df-c74d-4d6f-a0de-57fe95a9ddeb.png)
-	
-	2. \system\libraries\Form_validation.php	
-	![image](https://user-images.githubusercontent.com/15652231/188941925-ef29865a-dff1-474e-b4be-1eca222aebe9.png)	
+PHP version: 8.1.1
+
+Configure the /application/config/database.php for your mysql credentials
+![image](https://user-images.githubusercontent.com/15652231/188941088-19791c6f-0575-403c-a684-16b736bd7738.png)
+
+For PHP > 8 I need to make 2 little changes:
+
+1. \system\core\Output.php
+![image](https://user-images.githubusercontent.com/15652231/188943604-7ecbe9df-c74d-4d6f-a0de-57fe95a9ddeb.png)
+
+2. \system\libraries\Form_validation.php	
+![image](https://user-images.githubusercontent.com/15652231/188941925-ef29865a-dff1-474e-b4be-1eca222aebe9.png)	
 
 
 **END POINTS **
